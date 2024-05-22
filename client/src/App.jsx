@@ -41,8 +41,8 @@ function App() {
             .catch(error => console.error(error));
     };
 
-    const handleDeleteUser = (name,age) => {
-        axios.delete(`http://localhost:3000/deleteUser/${name,age}`)
+    const handleDeleteUser = (name) => {
+        axios.delete(`http://localhost:3000/deleteUser/${name}`)
             .then(response => {
                 fetchUsers();
             })
@@ -78,7 +78,7 @@ function App() {
                 {updateName ? (
                     <button onClick={handleUpdateUser}>Update User</button>
                 ) : (
-                    <button onClick={handleCreateUser}>Create User</button>
+                    <button onClick={handleCreateUser}>Create 23User</button>
                 )}
             </div>
         </>

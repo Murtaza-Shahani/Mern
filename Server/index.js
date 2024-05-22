@@ -5,6 +5,16 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
+
+
+ //app.use(express.static(path.join(__dirname, 'public')));
+
+// // Route to render the EJS template
+// app.get('/', (req, res) => {
+//     res.render('index', { name: 'World' });
+//   });
+  
+
 const UserModel = require('./models/Users');
 
 mongoose.connect("mongodb+srv://murtazashahani2023:MERN1@mern1.qgjxcqd.mongodb.net/mern1?retryWrites=true&w=majority&appName=mern1");
